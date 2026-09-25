@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Era Resources Ltd</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="brand">Trade-Bridge Resources Ltd</p>
+      <h1 class="headline">Reliable Sourcing<br>Seamless Trade<br>Worldwide Reach<br></h1>
+    </div>
+  </header>
+
+  <main class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <span class="divider"></span>
+    <p class="section-sub">Drop us a line!</p>
+
+    <form class="contact-form" onsubmit="return handleSubmit(event)">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message" rows="6" required></textarea>
+      <button type="submit">Send</button>
+      <p class="form-note" id="form-note"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>Copyright &copy; 2026 New Era Resources Ltd &ndash; All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-note').textContent = "Thank you — we'll be in touch shortly.";
+      e.target.reset();
+      return false;
+    }
+  </script>
+
+</body>
+</html>
