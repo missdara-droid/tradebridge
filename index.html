@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>New Era Resources Ltd</title>
+<title>Trade-Bridge Resources Ltd</title>
+<meta name="description" content="Trade-Bridge Resources Ltd supplies goods and services, and leads large-scale projects from initiation to completion, across construction, food, medical, renewable energy and logistics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
@@ -11,33 +12,240 @@
 </head>
 <body>
 
-  <header class="hero">
+  <header class="site-header" id="site-header">
+    <a class="site-logo" href="#top">Trade-Bridge</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="brand">Trade-Bridge Resources Ltd</p>
       <h1 class="headline">Reliable Sourcing<br>Seamless Trade<br>Worldwide Reach<br></h1>
+      <p class="hero-sub">Goods, services and project delivery across construction, food, medical, renewable energy and logistics.</p>
+      <a class="btn-outline" href="#contact">Start an enquiry</a>
     </div>
-  </header>
+  </section>
 
-  <main class="contact" id="contact">
-    <h2 class="section-title">Contact Us</h2>
-    <span class="divider"></span>
-    <p class="section-sub">Drop us a line!</p>
+  <div class="sector-strip">
+    <ul>
+      <li>Construction</li>
+      <li>Food</li>
+      <li>Medical</li>
+      <li>Renewable Energy</li>
+      <li>Logistics</li>
+    </ul>
+  </div>
 
-    <form class="contact-form" onsubmit="return handleSubmit(event)">
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="message" placeholder="Message" rows="6" required></textarea>
-      <button type="submit">Send</button>
-      <p class="form-note" id="form-note"></p>
-    </form>
+  <main>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <p class="eyebrow">About Us</p>
+            <h2 class="section-title">A single partner for supply and delivery</h2>
+          </div>
+          <div class="about-copy">
+            <p>Trade-Bridge Resources Ltd is a trading and project delivery company. We supply goods and services across construction, food, medical, renewable energy and logistics, and we lead large-scale projects in the same sectors from initiation to completion.</p>
+            <p>Whether the requirement is a single shipment or a multi-phase project, clients deal with one team and one point of contact, from first enquiry to final handover.</p>
+          </div>
+        </div>
+
+        <div class="ways">
+          <div class="way">
+            <h3>Supply</h3>
+            <p>General sales of goods and services. We source from vetted suppliers, manage the order and coordinate delivery to site.</p>
+          </div>
+          <div class="way">
+            <h3>Project Delivery</h3>
+            <p>We take responsibility for large-scale projects end to end: scoping, planning, procurement, execution and handover.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">Our Services</p>
+          <h2 class="section-title">Five sectors, supplied and delivered</h2>
+        </div>
+
+        <div class="sector-list">
+
+          <article class="sector">
+            <img class="sector-img" src="https://images.unsplash.com/photo-1670859255584-8b162775407f?q=80&w=1200&auto=format&fit=crop" alt="Tower cranes above a city construction site" width="1200" height="900" loading="lazy">
+            <div class="sector-body">
+              <span class="sector-num">01</span>
+              <h3 class="sector-name">Construction</h3>
+              <dl class="sector-points">
+                <div><dt>Supply</dt><dd>Building materials, tools, machinery and site supplies, sourced to specification.</dd></div>
+                <div><dt>Projects</dt><dd>Residential, commercial and infrastructure works managed from groundbreaking to handover.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="sector">
+            <img class="sector-img" src="https://images.unsplash.com/photo-1759344114577-b6c32e4d68c8?q=80&w=1200&auto=format&fit=crop" alt="Fresh fruit and vegetables at a wholesale market" width="1200" height="900" loading="lazy">
+            <div class="sector-body">
+              <span class="sector-num">02</span>
+              <h3 class="sector-name">Food</h3>
+              <dl class="sector-points">
+                <div><dt>Supply</dt><dd>Staple and packaged food products from vetted suppliers, for wholesale and bulk buyers.</dd></div>
+                <div><dt>Projects</dt><dd>Storage, processing and cold-chain facilities, developed from planning to commissioning.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="sector">
+            <img class="sector-img" src="https://images.unsplash.com/photo-1648224395277-052c8108efa3?q=80&w=1200&auto=format&fit=crop" alt="Hospital room with a patient monitor and medical equipment" width="1200" height="900" loading="lazy">
+            <div class="sector-body">
+              <span class="sector-num">03</span>
+              <h3 class="sector-name">Medical</h3>
+              <dl class="sector-points">
+                <div><dt>Supply</dt><dd>Medical supplies, consumables and equipment for clinics, hospitals and pharmacies.</dd></div>
+                <div><dt>Projects</dt><dd>Clinic and healthcare facility fit-outs, including equipment installation and commissioning.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="sector">
+            <img class="sector-img" src="https://images.unsplash.com/photo-1680355065203-43ad84bb6e69?q=80&w=1200&auto=format&fit=crop" alt="Rows of solar panels across a large solar farm" width="1200" height="900" loading="lazy">
+            <div class="sector-body">
+              <span class="sector-num">04</span>
+              <h3 class="sector-name">Renewable Energy</h3>
+              <dl class="sector-points">
+                <div><dt>Supply</dt><dd>Solar and other renewable energy equipment and components.</dd></div>
+                <div><dt>Projects</dt><dd>Solar installations from site assessment and design through to commissioning.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="sector">
+            <img class="sector-img" src="https://images.unsplash.com/photo-1765206810565-63f26023e1c9?q=80&w=1200&auto=format&fit=crop" alt="Shipping containers loaded on a train at a port" width="1200" height="900" loading="lazy">
+            <div class="sector-body">
+              <span class="sector-num">05</span>
+              <h3 class="sector-name">Logistics</h3>
+              <dl class="sector-points">
+                <div><dt>Supply</dt><dd>Freight, warehousing and delivery coordination, from supplier to final destination.</dd></div>
+                <div><dt>Projects</dt><dd>Warehouse and distribution facilities, set up and brought into operation.</dd></div>
+              </dl>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Project delivery -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">Project Delivery</p>
+          <h2 class="section-title">From initiation to completion</h2>
+          <p class="section-lead">On large-scale projects we stay accountable for the whole job, not one part of it. Every project follows the same five stages.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">01</span>
+            <h3>Initiation</h3>
+            <p>Define the scope, objectives, budget and feasibility together with the client.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <h3>Planning</h3>
+            <p>Specifications, schedules, resourcing and risk planning, agreed before work starts.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <h3>Procurement</h3>
+            <p>Materials, equipment and contractors sourced through our supplier network.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">04</span>
+            <h3>Execution</h3>
+            <p>On-site coordination, quality control and regular progress reporting.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">05</span>
+            <h3>Completion</h3>
+            <p>Inspection, handover and documentation, with support after delivery.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <div class="section-head">
+          <h2 class="section-title">Contact Us</h2>
+          <span class="divider"></span>
+          <p class="section-sub">Tell us about your supply requirement or project.</p>
+        </div>
+
+        <form class="contact-form" onsubmit="return handleSubmit(event)">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Message" rows="6" required></textarea>
+          <button type="submit">Send</button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <p>Copyright &copy; 2026 Trade-Bridge Resources Ltd &ndash; All Rights Reserved.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-name">Trade-Bridge Resources Ltd</p>
+          <p class="footer-line">Goods, services and project delivery.</p>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-label">Address</p>
+          <!-- Replace the three lines below with the company's real address -->
+          <address>
+            [Street address]<br>
+            [City, State / Region]<br>
+            [Country]
+          </address>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-label">Navigate</p>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="copyright">Copyright &copy; 2026 Trade-Bridge Resources Ltd &ndash; All Rights Reserved.</p>
+    </div>
   </footer>
 
   <script>
+    var header = document.getElementById('site-header');
+    function onScroll() {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
     function handleSubmit(e) {
       e.preventDefault();
       document.getElementById('form-note').textContent = "Thank you — we'll be in touch shortly.";
